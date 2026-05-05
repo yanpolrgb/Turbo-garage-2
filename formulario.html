@@ -1,0 +1,194 @@
+<!-- ARCHIVO 3: formulario.html (FORMULARIO FINAL) -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboGarage - Formulario de Solicitud</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("imagenes/fondo.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        nav {
+            background: #d60000;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 18px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section {
+            background: rgba(255, 255, 255, 0.55);
+            max-width: 950px;
+            margin: 25px auto;
+            padding: 35px;
+            border-radius: 12px;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+        }
+
+        h2 {
+            color: #d60000;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        .boton {
+            background: #d60000;
+            color: white;
+            padding: 14px 24px;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Formulario de Solicitud</h1>
+    <p>TurboGarage Servicios Mecánicos Integrales</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="atencion.html">Atención al Cliente</a>
+</nav>
+
+<section>
+    <h2>Solicitud de Servicio</h2>
+
+    <p>
+        Complete el siguiente formulario con sus datos personales para registrar
+        correctamente su solicitud de servicio automotriz.
+    </p>
+
+    <p>
+        Nuestro equipo revisará la información enviada y se pondrá en contacto
+        con usted a la brevedad posible para confirmar la atención y coordinar
+        el servicio solicitado.
+    </p>
+
+    <form action="exito.html">
+
+        <label>Nombre completo:</label>
+        <input 
+            type="text"
+            name="nombre"
+            placeholder="Ingrese su nombre completo"
+            required
+        >
+
+        <label>Teléfono de contacto:</label>
+        <input 
+            type="text"
+            name="telefono"
+            placeholder="Ingrese su número telefónico"
+            required
+        >
+
+        <label>Correo electrónico:</label>
+        <input 
+            type="email"
+            name="correo"
+            placeholder="Ingrese su correo electrónico"
+            required
+        >
+
+        <label>Servicio solicitado:</label>
+        <select name="servicio" required>
+            <option value="">Seleccione un servicio</option>
+            <option>Cambio de aceite</option>
+            <option>Diagnóstico automotriz</option>
+            <option>Frenos y suspensión</option>
+            <option>Electricidad automotriz</option>
+            <option>Reparación de motor</option>
+            <option>Mantención preventiva</option>
+        </select>
+
+        <label>Método de pago:</label>
+        <select name="pago" required>
+            <option value="">Seleccione método de pago</option>
+            <option>MasterCard</option>
+            <option>Visa</option>
+            <option>RedCompra</option>
+            <option>Transferencia Bancaria</option>
+            <option>Efectivo</option>
+        </select>
+
+        <label>Número de comprobante:</label>
+        <input 
+            type="text"
+            name="comprobante"
+            placeholder="Ingrese número de comprobante"
+            required
+        >
+
+        <label>Comentarios adicionales:</label>
+        <textarea 
+            name="comentarios"
+            rows="5"
+            placeholder="Ingrese detalles adicionales sobre el servicio"
+        ></textarea>
+
+        <button type="submit" class="boton">
+            Confirmar Solicitud
+        </button>
+
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 TurboGarage - Servicios Mecánicos Integrales</p>
+</footer>
+
+</body>
+</html>

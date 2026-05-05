@@ -1,0 +1,206 @@
+<!-- ARCHIVO 2: servicios.html (LISTA DE SERVICIOS) -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboGarage - Servicios</title>
+
+    <style>
+        body {
+         background-image: url("imagenes/fondo.jpg");
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+
+        header {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 35px;
+        }
+
+        nav {
+            background: #d60000;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 18px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+       section {
+    background: rgba(255, 255, 255, 0.55);
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 35px;
+    border-radius: 12px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+        h2 {
+            color: #d60000;
+        }
+
+        h3 {
+            color: #111;
+        }
+
+        .servicio {
+            background: #f9f9f9;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .boton {
+            display: inline-block;
+            background: #d60000;
+            color: white;
+            padding: 14px 24px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Servicios Disponibles</h1>
+    <p>TurboGarage Servicios Mecánicos Integrales</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="atencion.html">Atención al Cliente</a>
+</nav>
+
+<section>
+    <h2>Nuestros Servicios</h2>
+
+    <p>
+        En <strong>TurboGarage</strong> ofrecemos una amplia variedad de servicios
+        automotrices orientados a mantener su vehículo en óptimas condiciones
+        de funcionamiento, seguridad y rendimiento.
+    </p>
+
+    <p>
+        Nuestro equipo trabaja con profesionalismo, herramientas modernas
+        y atención personalizada para garantizar resultados eficientes
+        y de alta calidad en cada intervención mecánica.
+    </p>
+
+    <div class="servicio">
+      <img src="imagenes/aceite.jpg"
+     alt="Cambio de aceite"
+     style="width:100%; border-radius:10px; margin-bottom:15px;">
+
+        <h3>Cambio de Aceite</h3>
+        <p>
+            Realizamos cambio de aceite y filtros utilizando productos de alta calidad,
+            asegurando una mejor lubricación del motor y prolongando su vida útil.
+        </p>
+        <p><strong>Precio:</strong> $47.000</p>
+        <a href="formulario.html" class="boton">Solicitar Servicio</a>
+    </div>
+
+    <div class="servicio">
+      <img src="imagenes/diagnostico.jpg"
+     alt="Diagnóstico Automotriz"
+     style="width:100%; border-radius:10px; margin-bottom:15px;">
+
+        <h3>Diagnóstico Automotriz</h3>
+        <p>
+            Utilizamos escáner profesional para detectar fallas electrónicas
+            y mecánicas, permitiendo soluciones rápidas y precisas.
+        </p>
+        <p><strong>Precio:</strong> $30.000</p>
+        <a href="formulario.html" class="boton">Solicitar Servicio</a>
+    </div>
+
+    <div class="servicio">
+      
+      <img src="imagenes/frenos.jpg"
+     alt="Frenos y Suspensión"
+     style="width:100%; border-radius:10px; margin-bottom:15px;">
+
+        <h3>Frenos y Suspensión</h3>
+        <p>
+            Inspección, reparación y mantención de frenos, amortiguadores
+            y suspensión para mejorar la seguridad y estabilidad del vehículo.
+        </p>
+        <p><strong>Precio:</strong> Desde $60.000</p>
+        <a href="formulario.html" class="boton">Solicitar Servicio</a>
+    </div>
+
+    <div class="servicio">
+      
+      <img src="imagenes/electricidad.jpg"
+     alt="Electricidad Automotriz"
+     style="width:100%; border-radius:10px; margin-bottom:15px;">
+
+        <h3>Electricidad Automotriz</h3>
+        <p>
+            Diagnóstico y reparación de fallas eléctricas, batería,
+            alternador, luces y sistemas electrónicos del vehículo.
+        </p>
+        <p><strong>Precio:</strong> Desde $75.000</p>
+        <a href="formulario.html" class="boton">Solicitar Servicio</a>
+    </div>
+
+    <div class="servicio">
+      
+      <img src="imagenes/motor.jpg"
+     alt="Reparación de Motor"
+     style="width:100%; border-radius:10px; margin-bottom:15px;">
+
+        <h3>Reparación de Motor</h3>
+        <p>
+            Servicio especializado en diagnóstico, reparación y mantenimiento
+            completo del motor para  garantizar potencia y rendimiento.
+        </p>
+        <p><strong>Precio:</strong> Desde $80.000</p>
+        <a href="formulario.html" class="boton">Solicitar Servicio</a>
+    </div>
+
+    <div class="servicio">
+      
+      <img src="imagenes/mantencion.jpg"
+     alt="Mantención Preventiva"
+     style="width:100%; border-radius:10px; margin-bottom:15px;">
+
+        <h3>Mantención Preventiva</h3>
+        <p>
+            Revisión general del vehículo para prevenir fallas futuras,
+            optimizar el rendimiento y reducir costos de reparación.
+        </p>
+        <p><strong>Precio:</strong> Desde $95.000</p>
+        <a href="formulario.html" class="boton">Solicitar Servicio</a>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 TurboGarage - Servicios Mecánicos Integrales</p>
+</footer>
+
+</body>
+</html>
